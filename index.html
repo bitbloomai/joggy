@@ -11,7 +11,10 @@
 <body>
 
     <section class="main">
-        <img class="main-img" src="images/Design sem nome (16).png" alt="">
+        <picture>
+            <source media="(min-width: 851px)" srcset="images/desktop-main.png">
+            <img class="main-img" src="images/mobile-main.png" alt="">
+        </picture>
     </section>
 
     <div class="container">
@@ -62,7 +65,10 @@
             </div>
 
             <div class="why-body">
-                <img src="images/IHWGzR9095140.webp" alt="">
+                <picture>
+                    <source media="(min-width: 851px)" srcset="images/menosdor.png">
+                    <img src="images/menosdor-resp.png" alt="">
+                </picture>
                 <div class="why-body-txt">
                     <h1><mark class="mark-orange">Menos dor. Mais treino.</mark></h1>
                     <h1><mark class="mark-orange">Recuperação de verdade pra você não parar.</mark></h1>
@@ -103,7 +109,7 @@
 
         <section class="img-green">
 
-            <img class="img-green-pd" src="images/produto.png" alt="">
+            <img class="img-green-pd" src="images/greenarrow.png" alt="">
             <button class="cta-btn">EU QUERO EXPERIMENTAR</button>
             <img class="img-size" src="images/Folipro-praia-biquini-1536x543.jpg.webp" alt="">
         </section>
@@ -367,7 +373,7 @@
 
         <section class="faq">
             <div class="faq-container">
-                <h2 class="faq-title">Perguntas Frequentes</h2>
+                <h2 class="faq-title">PERGUNTAS FREQUÊNTES</h2>
 
                 <div class="faq-item">
                     <div class="faq-question">1. O Muscle Rub realmente funciona?</div>
@@ -419,6 +425,12 @@
             </div>
         </section>
 
+        <section class="wa-me">
+            <h1>FICOU ALGUMA DÚVIDA?</h1>
+            <p>Toque no botão abaixo e fale com uma de nossas consultoras!</p>
+            <button class="cta-btn">FALAR COM UMA CONSULTORA</button>
+        </section>
+
         <footer>
             <img class="logo" src="images/lmWACy6243549.webp" alt="">
             <div class="contato">
@@ -430,6 +442,29 @@
     </div>
 
     <script>
+
+        function updateResponsiveImages() {
+            const isMobile = window.innerWidth <= 850;
+            const images = document.querySelectorAll('.responsive-img');
+
+            images.forEach(img => {
+                const mobileSrc = img.getAttribute('data-mobile');
+                const desktopSrc = img.getAttribute('data-desktop');
+                const currentSrc = img.getAttribute('src');
+                const newSrc = isMobile ? mobileSrc : desktopSrc;
+
+                if (currentSrc !== newSrc) {
+                    img.setAttribute('src', newSrc);
+                }
+            });
+        }
+
+        // Carregar ao iniciar
+        window.addEventListener('DOMContentLoaded', updateResponsiveImages);
+        // Atualizar ao redimensionar
+        window.addEventListener('resize', updateResponsiveImages);
+
+
         const questions = document.querySelectorAll('.faq-question');
 
         questions.forEach(q => {
