@@ -684,6 +684,11 @@ footer {
         padding: 0 25px;
     }
 
+    .serve-body-txt {
+    grid-template-columns: 1fr;
+}
+
+
     .bonus {
         gap: 50px;
     }
