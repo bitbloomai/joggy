@@ -220,6 +220,19 @@ h2 {
     padding: 10vh 0 0 0;
 }
 
+.img-green-txt{
+display: flex;
+flex-direction: column;
+gap: 20px;
+align-items: center;
+max-width: 600px;
+justify-content: center;
+text-align: center;
+}
+.img-green-txt>h1{
+    font-size: 30px;
+}
+
 .img-size {
     width: 100%;
 }
@@ -859,6 +872,10 @@ footer>.contato{
         height: auto;
         margin-left: 0;
         margin-top: 55px;
+    }
+
+    .img-green-txt{
+        width: 90vw;
     }
 
     .img-green-pd {
