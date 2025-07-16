@@ -820,6 +820,10 @@ footer>.contato{
     text-decoration: none;
 }
 
+.cards-footer{
+    width: 500px;
+}
+
 
 @media(max-width: 850px) {
 
