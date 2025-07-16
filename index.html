@@ -11,10 +11,12 @@
 <body>
 
     <section class="main">
-        <picture>
-            <source media="(min-width: 851px)" srcset="images/desktop-main.png">
-            <img class="main-img" src="images/mobile-main.png" alt="">
-        </picture>
+        <a href="#buy">
+            <picture>
+                <source media="(min-width: 851px)" srcset="images/desktop-main.png">
+                <img class="main-img" src="images/mobile-main.png" alt="">
+            </picture>
+        </a>
     </section>
 
     <div class="container">
@@ -26,23 +28,23 @@
             </div>
             <div class="spiral-element">
                 <img src="images/e2.webp" alt="">
-                <p>Você tem fascite plantar</p>
+                <p>Você tem canelite</p>
             </div>
             <div class="spiral-element">
                 <img src="images/e3.webp" alt="">
-                <p>Você tem fascite plantar</p>
+                <p>Você tem pernas pesadas</p>
             </div>
             <div class="spiral-element">
                 <img src="images/e4.webp" alt="">
-                <p>Você tem fascite plantar</p>
+                <p>Você tem dor lombar</p>
             </div>
             <div class="spiral-element">
                 <img src="images/e5.webp" alt="">
-                <p>Você tem fascite plantar</p>
+                <p>Você tem dores musculares crônicas</p>
             </div>
             <div class="spiral-element">
                 <img src="images/e6.webp" alt="">
-                <p>Você tem fascite plantar</p>
+                <p>Você tem dificuldade na recuperação muscular entre treinos</p>
             </div>
         </section>
 
@@ -51,7 +53,7 @@
                 e descubra como
                 uma <strong>boa recuperação</strong> pode <strong>transformar sua performance</strong>.
             </h2>
-            <button class="cta-btn">EU QUERO EXPERIMENTAR</button>
+            <a href="#buy"><button class="cta-btn">EU QUERO EXPERIMENTAR</button></a>
         </section>
 
         <section class="why">
@@ -101,7 +103,7 @@
                         </P>
                     </div>
                     <div class="why-btn">
-                        <button class="cta-btn">EU QUERO EXPERIMENTAR</button>
+                        <a href="#buy"><button class="cta-btn">EU QUERO EXPERIMENTAR</button></a>
                     </div>
                 </div>
             </div>
@@ -110,8 +112,8 @@
         <section class="img-green">
 
             <img class="img-green-pd" src="images/greenarrow.png" alt="">
-            <button class="cta-btn">EU QUERO EXPERIMENTAR</button>
-          <img class="img-size" src="images/imgdiv.png" alt="">
+            <a href="#buy"><button class="cta-btn">EU QUERO EXPERIMENTAR</button></a>
+            <img class="img-size" src="images/imgdiv.png" alt="">
         </section>
 
         <section class="nature">
@@ -200,8 +202,7 @@
                 <h2><strong class="orangeTxt">Multifuncional de verdade:</strong></h2>
                 <p> Alívio terapêutico, regeneração muscular e cuidado com a pele — tudo em uma única aplicação.
                 </p>
-
-                 <button class="cta-btn">EU QUERO EXPERIMENTAR</button>
+                <a href="#buy"><button class="cta-btn">EU QUERO EXPERIMENTAR</button></a>
             </div>
 
         </section>
@@ -334,7 +335,7 @@
 
             <div class="bonus-grid">
                 <div class="bonus-grid-content">
-                    <img src="images/IHWGzR9095140.webp" alt="">
+                    <img src="images/bonus1.png" alt="">
                     <div class="bonus-content-txt">
                         <h2 class="orangeTxt">START <br><span>1 UNIDADE</span></h2>
                         <p><strong>BÔNUS:</strong> "Constância Sem Sofrimento"</p>
@@ -345,7 +346,7 @@
 
                 <div class="bonus-grid-content">
 
-                    <img src="images/IHWGzR9095140.webp" alt="">
+                    <img src="images/bonus2.png" alt="">
                     <div class="bonus-content-txt">
                         <h2 class="orangeTxt">KIT CONSTÂNCIA <br><span>2 UNIDADES</span></h2>
                         <p><strong>BÔNUS 1:</strong> "Constância Sem Sofrimento"</p>
@@ -358,7 +359,7 @@
 
                 <div class="bonus-grid-content">
 
-                    <img src="images/IHWGzR9095140.webp" alt="">
+                    <img src="images/bonus3.png" alt="">
                     <div class="bonus-content-txt">
                         <h2 class="orangeTxt">KIT PERFORMANCE TOTAL <br><span>3 UNIDADES</span></h2>
                         <p><strong>BÔNUS 1:</strong> "Constância Sem Sofrimento"</p>
@@ -382,7 +383,7 @@
         </section>
 
 
-        <div class="buy">
+        <div id="buy"  class="buy">
             <h1>COMPRE E <span class="orangeTxt">ECONOMIZE</span></h1>
 
             <div class="option-card" onclick="document.getElementById('radio1').checked = true;">
@@ -467,7 +468,10 @@
                 </div>
             </div>
 
-            <button class="cta-btn">ADICIONAR AO CARRINHO</button>
+            <div class="buy-cta">
+                <button class="cta-btn">ADICIONAR AO CARRINHO</button>
+                <img class="cta-img" src="images/cta-btn.png" alt="">
+            </div>
         </div>
 
 
@@ -532,11 +536,16 @@
         </section>
 
         <footer>
-            <img class="logo" src="images/lmWACy6243549.webp" alt="">
+
             <div class="contato">
-                <p>mail@gmail.com</p>
-                <p>32999526526</p>
+                <img class="logo" src="images/footer-logo.png" alt="">
+                <p>SAC: <a
+                        href="mailto:atendimento@joggybrasil.com.br?subject=Interesse%20no%20produto%20JOGGY&body=Olá%2C%20tenho%20interesse%20no%20produto%20JOGGY.%20Gostaria%20de%20mais%20informações.%20Aguardo%20seu%20retorno.">atendimento@joggybrasil.com.br</a>
+                </p>
+                <img class="cards-footer" src="images/footercards.webp" alt="">
             </div>
+
+            <div></div>
         </footer>
 
     </div>
