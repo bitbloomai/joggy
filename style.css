@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'PraktikaRounded';
-    src: url('../fonts/praktika-rounded-extrabold-ext.woff2') format('woff2'),
+    src: url('praktika-rounded-extrabold-ext.ttf') format('woff2'),
         url('../fonts/praktika-rounded-extrabold-ext.woff') format('woff');
     font-weight: 800;
     font-style: normal;
@@ -130,7 +130,7 @@ h2 {
 }
 
 .why-head>div>h1 {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 1.2em;
 
 }
@@ -396,7 +396,7 @@ table td .warning-icon {
 .serve-body {
     /* background: linear-gradient(to right, #f3ff9c, #DEFF6A); */
     background: linear-gradient(to right, #d6d91b, #f4f771);
-    border-radius: 100px 100px 0 0;
+    /* border-radius: 100px 100px 0 0; */
     /* max-width: 900px; */
     padding: 80px 0 80px 80px;
     box-sizing: border-box;
@@ -444,7 +444,7 @@ table td .warning-icon {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
     background-color: rgb(245, 245, 245);
 }
 
@@ -456,28 +456,28 @@ table td .warning-icon {
 .bonus-grid {
     max-width: 900px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-
     padding: 20px;
 }
 
 .bonus-grid-content {
     border: 1px solid #fd773e3d;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.096);
-    /* background: linear-gradient(to right, #FD763E, #FFA770, #FD763E); */
+    display: flex;
     color: #222222;
-    border-radius: 40px;
-    max-width: 300px;
+    border-radius: 30px;
+    max-width: 600px;
 }
 
-.bonus-grid-content>h2 {
-    background: linear-gradient(to right, #FD763E, #FFA770, #FD763E);
-    border-radius: 40px 40px 0 0;
+.bonus-content-txt>h2 {
     padding: 20px;
     font-size: 15px;
     text-align: center;
     font-weight: 900;
+
+    line-height: 1em;
 }
 
 .bonus-grid-content span {
@@ -485,14 +485,20 @@ table td .warning-icon {
 }
 
 .bonus-grid-content>img {
-    width: 100%;
+    width: 40%;
+    border-radius: 30px 0 0 30px;
 }
 
-.bonus-grid-content>p {
-    padding: 5px 10px;
+.bonus-content-txt {
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.bonus-grid-content p {
     font-size: 15px;
     text-align: left;
-    font-weight: 700;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .spn-line {
@@ -509,6 +515,185 @@ table td .warning-icon {
 .bonus-footer>img {
     width: 100px;
 }
+
+
+
+
+.buy {
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 100%;
+    max-width: 100vw;
+    background-color: rgb(245, 245, 245);
+
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+}
+
+.buy>h1{
+    margin-bottom: 30px;
+    line-height: 1em;
+}
+.buy>button{
+    margin: 25px 0 40px 0;
+}
+
+.option-card {
+    margin: auto;
+    max-width: 600px;
+    display: flex;
+    align-items: flex-start;
+    /* Align items to start for multi-line content */
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    min-height: 80px;
+    /* Ensure cards have a minimum height */
+}
+
+.option-card.selected {
+    border-color: #d6d91b;
+    /* background-color: #e6f0fa; */
+    background: linear-gradient(to right, #d6d91b41, #f5f77141);
+}
+
+.option-card.most-sold-option {
+    /* Specific class for the most sold option */
+    border-color: #d6d91b;
+    /* background-color: #e6f0fa; */
+}
+
+.option-card input[type="radio"] {
+    margin-right: 15px;
+    transform: scale(1.2);
+    accent-color: #3f80c6;
+    flex-shrink: 0;
+    /* Prevent radio button from shrinking */
+    margin-top: 5px;
+    /* Align radio button with the top of content */
+}
+
+.option-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.option-header .title {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.option-header .units {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 10px;
+}
+
+.highlights {
+    font-size: 0.85em;
+    color: #555;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.highlight-item img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+/* Badges */
+.discount-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #d6d91b;
+    /* Orange for discount */
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-right: 10px;
+    /* Space between badges */
+}
+
+.discount-badge img {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+}
+
+.most-sold-badge-top {
+    /* Badge for "Mais Vendido" on top right */
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #FD763E;
+    /* Red for most sold */
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.75em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.most-sold-badge-top img {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.price-info {
+    text-align: right;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 15px;
+    /* Space between content and price */
+    flex-shrink: 0;
+}
+
+.price-info .current-unit-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+
+.price-info .total-price {
+    font-size: 0.95em;
+    color: #666;
+    margin-top: 5px;
+    display: block;
+}
+
 
 .faq {
     background-color: rgb(245, 245, 245);
@@ -583,13 +768,13 @@ footer {
     color: #FDFCF7;
 }
 
-.wa-me{
-     background-color: rgb(245, 245, 245);
-     text-align: center;
-     padding-bottom: 8vh;
+.wa-me {
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    padding-bottom: 8vh;
 }
 
-.wa-me>P{
+.wa-me>P {
     margin: 16px 0;
     font-weight: 700;
 }
@@ -654,6 +839,10 @@ footer {
 
     }
 
+    .nature{
+        padding: 0 20px;
+    }
+
     .nature-elements {
         grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
     }
@@ -675,7 +864,7 @@ footer {
     }
 
     .serve-body {
-        border-radius: 100px 100px 0 0;
+        /* border-radius: 100px 100px 0 0; */
         padding: 80px 0;
     }
 
@@ -685,8 +874,8 @@ footer {
     }
 
     .serve-body-txt {
-    grid-template-columns: 1fr;
-}
+        grid-template-columns: 1fr;
+    }
 
 
     .bonus {
@@ -708,5 +897,54 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 60px;
+    }
+
+    .bonus-grid-content{
+        flex-direction: column;
+    }
+
+    .bonus-grid-content>img {
+        width: 100%;
+    }
+
+
+
+     .option-card {
+        flex-direction: row;
+        /* Keep as row, but adjust internal flex */
+        align-items: center;
+        /* Center vertically for radio */
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .option-content {
+        margin-left: 0;
+        /* No extra margin for content */
+    }
+
+    .option-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .option-header .units {
+        margin-left: 0;
+        margin-top: 2px;
+    }
+
+    .price-info {
+        margin-left: 10px;
+        align-items: flex-end;
+    }
+
+    .highlights {
+        font-size: 0.8em;
+        margin-top: 8px;
+        /* More space for highlights */
+    }
+
+    .highlight-item {
+        font-size: 0.9em;
     }
 }
