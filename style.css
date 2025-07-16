@@ -313,6 +313,10 @@ h2 {
     font-weight: 700;
 }
 
+.prov-txt>p{
+    margin: 10px 0 25px 0;
+}
+
 /* table */
 
 .table {
