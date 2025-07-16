@@ -928,6 +928,11 @@ footer {
         align-items: flex-start;
     }
 
+    .option-header .title{
+        text-align: left;
+        font-size: 16px;
+    }
+
     .option-header .units {
         margin-left: 0;
         margin-top: 2px;
