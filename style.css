@@ -43,6 +43,10 @@ h2 {
 
 .container {}
 
+.why-head-sec{
+    margin-bottom: 10vh;
+}
+
 .spiral {
     display: grid;
     grid-template: 1fr 1fr/1fr 1fr 1fr;
@@ -172,7 +176,7 @@ h2 {
 }
 
 .why-btn {
-    text-align: left;
+    text-align: center;
     margin-top: 40px;
 }
 
