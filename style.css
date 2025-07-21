@@ -31,6 +31,19 @@ body {
     color: #222222;
 }
 
+.wpp-fixed{
+    position: fixed;
+    z-index: 100;
+    right: 1vw;
+    bottom: 4vh;
+    width: 70px;
+    transition: .3s;
+}
+
+.wpp-fixed:hover{
+    transform: scale(1.05) !important;
+}
+
 h1,
 h2 {
     font-family: 'PraktikaRounded', sans-serif;
