@@ -44,7 +44,8 @@ h2 {
 .container {}
 
 .why-head-sec{
-    margin-bottom: 10vh;
+    padding: 10vh 0;
+     background-color: #DEFF6A;
 }
 
 .spiral {
@@ -80,8 +81,9 @@ h2 {
     margin: auto;
 
     text-align: center;
-    background: linear-gradient(to right, #d6d91b, #f4f771);
+    /* background: linear-gradient(to right, #d6d91b, #f4f771); */
     /* background: linear-gradient(to right, #f3ff9c, #deff6a); */
+     background-color: #DEFF6A;
 }
 
 .banner1>h2 {
@@ -213,7 +215,8 @@ h2 {
 }
 
 .img-green {
-    background: linear-gradient(to right, #d6d91b, #f4f771);
+    background-color: #DEFF6A;
+    /* background: linear-gradient(to right, #d6d91b, #f4f771); */
     /* background: linear-gradient(to right, #d6d91b, #feffd3); */
     display: flex;
     flex-direction: column;
@@ -282,8 +285,8 @@ text-align: center;
 }
 
 .nature-element>img {
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     margin-bottom: 5px;
 }
 
@@ -309,6 +312,12 @@ text-align: center;
     max-width: 300px;
     text-align: center;
 
+}
+
+.prov-element>h2{
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.2em;
 }
 
 .prov-element>p {
@@ -416,8 +425,9 @@ table td .warning-icon {
 
 
 .serve-body {
+     background-color: #DEFF6A;
     /* background: linear-gradient(to right, #f3ff9c, #DEFF6A); */
-    background: linear-gradient(to right, #d6d91b, #f4f771);
+    /* background: linear-gradient(to right, #d6d91b, #f4f771); */
     /* border-radius: 100px 100px 0 0; */
     /* max-width: 900px; */
     padding: 80px 0 80px 80px;
