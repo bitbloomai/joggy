@@ -1057,8 +1057,8 @@ footer>.contato {
     }
 
     .img-green-pd {
-        width: 400px;
-
+        width: 98vw;
+        margin-left: 0;
     }
 
     .nature {
@@ -1076,7 +1076,7 @@ footer>.contato {
 
 
     .sec-prov {
-        background-color: rgb(245, 245, 245);
+        background-color: #DEFF6A;
         padding: 10vh 0;
     }
 
