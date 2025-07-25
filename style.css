@@ -1,10 +1,10 @@
-@font-face {
+/* @font-face {
     font-family: 'PraktikaRounded';
     src: url('praktika-rounded-extrabold-ext.ttf') format('woff2'),
         url('../fonts/praktika-rounded-extrabold-ext.woff') format('woff');
     font-weight: 800;
     font-style: normal;
-}
+} */
 
 
 
@@ -632,7 +632,7 @@ table td .warning-icon {
 }
 
 .bonus-grid {
-    max-width: 900px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -647,6 +647,7 @@ table td .warning-icon {
     color: #222222;
     border-radius: 30px;
     max-width: 600px;
+    position: relative;
 }
 
 .bonus-content-txt>h2 {
@@ -659,7 +660,7 @@ table td .warning-icon {
 }
 
 .bonus-grid-content span {
-    font-size: 12px;
+    /* font-size: 12px; */
 }
 
 .bonus-grid-content>img {
@@ -673,7 +674,7 @@ table td .warning-icon {
     box-sizing: border-box;
 }
 
-.bonus-grid-content p {
+.bonus-grid-content {
     font-size: 15px;
     text-align: left;
     font-weight: 500;
@@ -695,8 +696,47 @@ table td .warning-icon {
     width: 100px;
 }
 
+.bonus-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.btn-bonus-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    margin-bottom: 20px;
+}
+
+.bonus-price {
+   margin-top: 20px;
+}
+
+.bonus-price>p {
+    text-align: center;
+    font-weight: bold;
+  
+
+}
+
+.price-from {
+    font-size: 16px;
+}
+
+.price-card {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.price-to {
+    font-size: 15px;
+    color: #333;
+}
 
 .buy {
     border-radius: 10px;
@@ -993,7 +1033,7 @@ footer>.contato {
         height: 720px;
     }
 
-    .doc-content{
+    .doc-content {
         height: 150px;
     }
 
